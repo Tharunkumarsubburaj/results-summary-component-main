@@ -1,0 +1,351 @@
+/* variables f0r color */
+
+:root{
+    --clr-Light-red: rgb(255, 87, 87);
+    --clr-Orangey-yellow: rgb(255, 176, 31);
+    --clr-Green-teal: rgb(0, 189, 145);
+    --clr-Cobalt-blue: rgb(17, 37, 212);
+
+    /* Neutral */
+
+    --clr-Pale-blue: hsl(221, 100%, 96%);
+    --clr-Light-lavender: hsl(241, 100%, 89%);
+    --clr-Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* background */
+
+    --clr-Light-slate-blue: hsl(252, 100%, 67%);
+    --clr-Light-royal-blue: hsl(241, 81%, 54%);
+    --clr-Light-red-back: rgba(255, 87, 87, 0.1);
+    --clr-Orangey-yellow-back: rgba(255, 176, 31, 0.1);
+    --clr-Green-teal-back: rgba(0, 189, 145, .1);
+    --clr-Cobalt-blue-back: rgba(17, 37, 212, 0.1);
+    
+    /* circle */
+
+    --clr-Violet-blue: hsla(256, 72%, 46%, 1);
+    --clr-Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* screen ratio for 1200px to 1800px */
+
+@media (min-width:1200px) and (max-width:1800px){
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Hanken Grotesk", sans-serif;
+    }
+
+    .mainbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 1rem;
+        box-shadow:  .5rem .5rem 1rem 0.01rem rgba(0, 0, 0, .2);
+        width: 45rem;
+    }
+
+    /* blue box div */
+
+    .firstbox{
+        background:linear-gradient(  hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        color: white;
+        border-radius: 1rem;
+        text-align: center;
+        padding: 1rem 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Result{
+        font-size: 1.5rem;
+        padding: 0 .5rem .5rem .5rem;
+        color: var(--clr-Light-lavender);
+    }
+
+    .score{
+        height: 10rem;
+        width: 10rem;
+        text-align: center;
+        border-radius: 100%;
+        background: linear-gradient( hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+    }
+
+    .sevensix{
+        font-size: 4rem;
+        font-weight: 700;
+        margin-top:2.4rem ;
+    }
+    
+    .onetwozero{
+        margin-top:-4.3rem ;
+        color: var(--clr-Light-lavender);
+    }
+    
+    .Great{
+        font-size: 2rem;
+        margin: 1.5rem 0 0 0 ;
+    }
+    
+    .para{
+        font-size: 1rem;
+        color: var(--clr-Light-lavender);
+        font-weight:500;
+        padding: .5rem;
+        margin-top: 0;
+    }
+
+    /* white box div */
+
+    .secondbox{
+        background-color: white;
+        border-radius: 1rem;
+        padding:  1rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary{
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: .8rem;
+    }
+
+    .sub1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Light-red-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+    }
+    .sub2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Orangey-yellow-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+    }
+    .sub3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Green-teal-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+    }
+    .sub4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Cobalt-blue-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+    }
+    svg{
+        padding: 0 .2rem 0 0;
+    }
+
+    a{
+        text-decoration-line: none;
+        color: white;
+        background-color: var(--clr-Dark-gray-blue);
+        padding: 1rem;
+        border-radius: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 1rem 0;
+        width: 16rem;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    a:hover{
+        background:linear-gradient(  hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+}
+
+/* screen ratio for 375px to 1200px */
+
+@media (min-width:375px) and (max-width:1200px){
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Hanken Grotesk", sans-serif;
+    }
+
+    .mainbox{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 1rem 1rem;
+        box-shadow:  .5rem .5rem 1rem 0.01rem rgba(0, 0, 0, .2);
+        width: 100%;
+    }
+
+    /* blue box div */
+
+    .firstbox{
+        background:linear-gradient(  hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        color: white;
+        border-radius: 0 0 1rem 1rem ;
+        text-align: center;
+        padding: 1rem 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Result{
+        font-size: 1.5rem;
+        padding: 0 .5rem .5rem .5rem;
+        color: var(--clr-Light-lavender);
+    }
+
+    .score{
+        height: 10rem;
+        width: 10rem;
+        text-align: center;
+        border-radius: 100%;
+        background: linear-gradient( hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+    }
+
+    .sevensix{
+        font-size: 4rem;
+        font-weight: 700;
+        margin-top:2.4rem ;
+    }
+    
+    .onetwozero{
+        margin-top:-4.3rem ;
+        color: var(--clr-Light-lavender);
+    }
+    
+    .Great{
+        font-size: 2rem;
+        margin: 1.5rem 0 0 0 ;
+    }
+    
+    .para{
+        font-size: 1rem;
+        color: var(--clr-Light-lavender);
+        font-weight:500;
+        padding: .5rem;
+        margin-top: 0;
+    }
+
+    /* white box div */
+
+    .secondbox{
+        background-color: white;
+        border-radius: 1rem;
+        padding:  1rem 3rem;
+        padding-left: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary{
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: .8rem;
+    }
+
+    .sub1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Light-red-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+        width: 100%;
+    }
+    .sub2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Orangey-yellow-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+        width: 100%;
+    }
+    .sub3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Green-teal-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+        width: 100%;
+    }
+    .sub4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: var(--clr-Cobalt-blue-back);
+        margin: .3rem 0;
+        padding: 1rem;
+        height: 1rem;
+        width: 100%;
+    }
+    svg{
+        padding: 0 .2rem 0 0;
+    }
+
+    a{
+        text-decoration-line: none;
+        color: white;
+        background-color: var(--clr-Dark-gray-blue);
+        padding: 1rem;
+        border-radius: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 1rem 0;
+        width: 100%;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    a:hover{
+        background:linear-gradient(  hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+}
